@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"    
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        
+        ads:adUnitId="a14ee10e6141a3c"
+        ads:loadAdOnCreate="true" />
+<!-- ads:testDevices="TEST_EMULATOR, 40BB7375BF01DF3F3C9DE8D5504722B9"  -->        
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal"
+        android:text="USA"
+        android:textColor="#5DFC0A"
+        android:textSize="24dip" />
+
+    <ViewFlipper
+        android:id="@+id/main_flipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttons_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="2px"
+        android:background="@drawable/left" />
+
+    <Button
+        android:id="@+id/buttons_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/right" />
+
+    <Button
+        android:id="@+id/buttons_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:background="@drawable/camera_gray" />
+
+</FrameLayout>

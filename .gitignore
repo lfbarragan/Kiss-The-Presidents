@@ -1,0 +1,4 @@
+bin
+.hg
+.hgignore
+gen
